@@ -1,0 +1,30 @@
+<head>
+  <title>Startup Pulse</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Company Pulse</h1>
+
+    {{> trending}}
+  </div>
+</body>
+
+<template name='trending'>
+  <ul class="list-of-companies">
+  {{#each companies}}
+    {{> company}}
+  {{/each}}
+  </ul>
+</template>
+
+<template name='company'>
+  <li class="a-company">
+    <div class='bump'>
+      <div class='count'>{{votes}}</div>
+    </div>
+    <div class='logo'><img src="{{image_url}}" /></div>
+    <div class='name'>{{name}}</div>
+    <div class='desc'>{{short_description}}</div>
+  </li>
+</template>

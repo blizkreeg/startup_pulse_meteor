@@ -1,0 +1,54 @@
+ul.list-of-companies {
+  list-style: none;
+  padding: 0px 0px;
+}
+
+ul.list-of-companies li.a-company {
+  clear: both;
+  overflow: auto;
+  padding: 10px 0px;
+  border-bottom: 1px dotted #ececec;
+}
+
+ul.list-of-companies li.a-company .bump {
+  position: relative;
+  background: white url('/up145.png') 4px 0 no-repeat;
+  cursor: pointer;
+  width: 32px;
+  height: 64px;
+  float: left;
+  margin-right: 20px;
+  text-align: center;
+}
+
+ul.list-of-companies li.a-company .bump .count {
+  position: absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  top: 30px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+ul.list-of-companies li.a-company .logo {
+  float: left;
+  margin-right: 20px;
+}
+
+ul.list-of-companies li.a-company .logo img {
+  width: 64px; height: 64px;
+}
+
+ul.list-of-companies li.a-company .name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+ul.list-of-companies li.a-company .desc {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 320px;
+  white-space: nowrap;
+}
